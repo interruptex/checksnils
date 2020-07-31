@@ -1,0 +1,34 @@
+<div class="check-snils">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12">
+        <div class="snils-validation d-flex h-100">
+          <div class="indexes d-flex">
+            <div
+              *ngFor="let htmlIndex of htmlIndexArray"
+              [innerHtml]="htmlIndex"
+              class="index d-flex"
+            ></div>
+          </div>
+          <div class="snils-input d-flex">
+            <textarea
+              id="snils-input-area"
+              class="snils-input-area d-flex"
+              autosize
+              [(ngModel)]="snilsText"
+              (input)="formatSnilsText($event)"
+              placeholder="12345678900"
+            ></textarea>
+          </div>
+          <div class="pointers d-flex">
+            <div
+              *ngFor="let htmlPointer of htmlPointerArray"
+              [innerHtml]="htmlPointer"
+              class="pointer d-flex"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

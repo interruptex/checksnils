@@ -1,0 +1,69 @@
+.check-snils {
+  height: 100%;
+}
+.snils-input {
+  width: 100%;
+}
+.snils-validation {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+.snils-input-area {
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  resize: none;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  padding: 5px 10px;
+  overflow: hidden;
+  border: none;
+  box-sizing: border-box;
+}
+.indexes {
+  flex-direction: column;
+  padding: 5px 0;
+  border: 1px solid #efefef;
+  background: #efefef;
+}
+.index {
+  font-family: monospace;
+  min-width: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.index ::ng-deep .index-valid {
+  color: #28a745;
+}
+.index ::ng-deep .index-invalid {
+  color: #dc3545;
+}
+.pointers {
+  flex-direction: column;
+  padding: 5px 0;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  background: #ffffff;
+}
+.pointer {
+  font-family: monospace;
+  min-width: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.pointer ::ng-deep .pointer-valid {
+  color: #ffffff;
+}
+.pointer ::ng-deep .pointer-invalid {
+  color: #dc3545;
+}

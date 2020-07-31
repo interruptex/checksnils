@@ -1,0 +1,14 @@
+<div
+  [ngClass]="{
+    error: message.type === 0,
+    success: message.type === 1,
+    notification: message.type === 2
+  }"
+  class="message d-flex"
+  *ngIf="message.content"
+>
+  <div class="message-close-button" (click)="close()">
+    <i class="fas fa-times"></i>
+  </div>
+  <p *ngFor="let line of message.content">{{ line }}</p>
+</div>

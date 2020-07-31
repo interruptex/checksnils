@@ -1,0 +1,77 @@
+.site-footer {
+  font-family: Montserrat;
+  background: #ffffff;
+  color: #3b4045;
+}
+.site-footer .site-footer-content {
+  height: 6.5rem;
+  font-size: 1.15385rem;
+}
+.site-footer .created-by-iex {
+  display: flex;
+  align-items: center;
+}
+.site-footer .copyright {
+  display: flex;
+  align-items: center;
+}
+
+.iex__logo {
+  display: flex;
+  align-items: center;
+}
+.iex__logo__exception {
+  display: flex;
+  flex-direction: column;
+  width: 3.25rem;
+  height: 3.25rem;
+  justify-content: center;
+  align-items: center;
+}
+.iex__logo__char {
+  font-family: "Montserrat Alternates";
+  font-size: 1.47rem;
+  font-weight: 500;
+  color: #3b4045;
+}
+.iex__logo__n {
+  margin-left: -2px;
+}
+.iex__logo__t0 {
+  margin-left: -2px;
+}
+.iex__logo__t1 {
+  margin-left: -1px;
+}
+.iex__logo__e {
+  font-family: "Montserrat";
+  margin-left: -1px;
+}
+.iex__logo__r {
+  margin-left: -1px;
+}
+.iex__logo__u {
+  margin-left: -1px;
+}
+.iex__logo__p {
+  margin-left: -2px;
+}
+.iex__logo__x {
+  margin-left: -1px;
+}
+.iex__logo__red {
+  color: #b11515;
+}
+.iex__logo__exception .iex__logo__exception__greyline {
+  height: 1px;
+  margin-bottom: 2px;
+  width: 26px;
+  background: #3b4045;
+}
+.iex__logo__exception .iex__logo__exception__redline {
+  height: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  width: 26px;
+  background: #b11515;
+}

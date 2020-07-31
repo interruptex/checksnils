@@ -1,0 +1,48 @@
+.site-header {
+  font-family: Montserrat;
+  background: #ffffff;
+}
+.site-header-content {
+  margin: 15px 0;
+}
+.site-header-logo,
+.site-header-nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.15385rem;
+}
+.site-header-nav ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.site-header-nav ul li a i {
+  padding-right: 0.3rem;
+}
+.site-header-logo .logo-icon {
+  background-image: url(/assets/images/fingerprint.svg);
+  background-color: #3b4045;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 2.2615rem;
+  height: 3.25rem;
+  width: 3.25rem;
+  display: flex;
+}
+.logo-text {
+  font-size: 1.15385rem;
+  color: #3b4045;
+  display: flex;
+  padding-left: 0.9rem;
+}
+.logo-text .check-text {
+  font-weight: 400;
+  letter-spacing: -0.012rem;
+}
+.logo-text .snils-text {
+  font-weight: 600;
+  padding-left: 0.08rem;
+}
+.nav-link-last {
+  padding-right: 0;
+}
