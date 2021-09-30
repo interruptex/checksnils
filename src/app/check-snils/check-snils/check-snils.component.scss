@@ -1,0 +1,74 @@
+.check-snils {
+  height: 100%;
+}
+.snils-input {
+  width: 100%;
+}
+.snils-validation {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  border-radius: 6px;
+}
+.snils-input-area {
+  //font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  resize: none;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  padding: 5px 10px;
+  overflow: hidden;
+  border: none;
+  box-sizing: border-box;
+}
+.indexes {
+  flex-direction: column;
+  padding: 5px 0;
+  border: 1px solid #efefef;
+  background: #efefef;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.index {
+  //font-family: monospace;
+  min-width: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.index ::ng-deep .index-valid {
+  color: #2c9b18;
+}
+.index ::ng-deep .index-invalid {
+  color: #b91d2c;
+}
+.pointers {
+  flex-direction: column;
+  padding: 5px 0;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  background: #ffffff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pointer {
+  font-family: monospace;
+  min-width: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.pointer ::ng-deep .pointer-valid {
+  color: #ffffff;
+}
+.pointer ::ng-deep .pointer-invalid {
+  color: #b91d2c;
+}

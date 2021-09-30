@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 13px;
+}
+body {
+  font-family: "JetBrains Mono", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+app-footer {
+  flex: 0 0 auto;
+}
+router-outlet + * {
+  width: 100%;
+}
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+a {
+  color: #3b4045;
+  transition: color 0.3s linear;
+}
+a:hover {
+  color: #343a40;
+}

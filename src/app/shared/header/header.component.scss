@@ -1,0 +1,49 @@
+.site-header {
+  background: #ffffff;
+}
+.site-header-content {
+  margin: 15px 0;
+}
+.site-header-logo,
+.site-header-nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.15385rem;
+}
+.site-header-nav ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.site-header-nav ul li a i {
+  padding-right: 0.3rem;
+}
+.site-header-logo .logo-icon {
+  background-image: url(/assets/images/fingerprint-dark.svg);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  background-position: 50%;
+  background-size: 3.25rem;
+  height: 3.25rem;
+  width: 3.25rem;
+  display: flex;
+}
+.logo-text {
+  font-family: "Bai Jamjuree";
+  font-size: 1.35385rem;
+  color: #3b4045;
+  display: flex;
+  padding-left: 0.5rem;
+}
+.logo-text .check-text {
+  font-weight: 400;
+}
+.logo-text .snils-text {
+  font-weight: 700;
+  padding-left: 0.02rem;
+  letter-spacing: 0.025rem;
+}
+.nav-link-last {
+  padding-right: 0;
+}

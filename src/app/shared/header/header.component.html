@@ -1,0 +1,48 @@
+<header class="site-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="site-header-content d-flex">
+          <div class="site-header-logo">
+            <div class="logo-icon"></div>
+            <div class="logo-text">
+              <span class="check-text">check</span>
+              <span class="snils-text">snils</span>
+            </div>
+          </div>
+          <div class="site-header-nav ml-auto">
+            <ul class="nav">
+              <li *ngFor="let item of navItems; let i = index" class="nav-item">
+                <a
+                  *ngIf="!item.external; else external"
+                  [routerLink]="item.routerLink"
+                  class="nav-link"
+                  [ngClass]="{
+                    active:
+                      path.substr(0, item.routerLink.length) ===
+                      item.routerLink,
+                    'nav-link-last': i === navItems.length - 1
+                  }"
+                  ><i [ngClass]="item.icon"></i>{{ item.label }}</a
+                >
+                <ng-template #external>
+                  <a
+                    [href]="item.routerLink"
+                    class="nav-link"
+                    [ngClass]="{
+                      'nav-link-last': i === navItems.length - 1
+                    }"
+                    ><i [ngClass]="item.icon"></i>{{ item.label }}</a
+                  >
+                </ng-template>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="messages-container"><messages></messages></div>
+      </div>
+    </div>
+  </div>
+</header>

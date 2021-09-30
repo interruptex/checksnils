@@ -1,0 +1,54 @@
+<div class="iex-button-container">
+  <button
+    [disabled]="disabled"
+    (click)="handleClick($event)"
+    [routerLink]="link"
+    class="btn iex-button"
+    [ngClass]="classes"
+    (mouseover)="hover = true"
+    (mouseleave)="hover = false"
+  >
+    <div
+      *ngIf="icon"
+      [ngStyle]="setIconStyles()"
+      class="iex-button-icon"
+      [ngClass]="{ 'small-size': iconBlockSize === 's', 'extra-small-size': iconBlockSize === 'xs' }"
+    >
+      <i *ngIf="!isWorking" class="{{ icon }}"></i>
+      <div *ngIf="isWorking">
+        <div class="la-ball-pulse la-sm" [ngStyle]="{ color: isWorkingColor }">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div
+      *ngIf="badge"
+      class="iex-button-badge-container"
+      [ngStyle]="setBadgeContainerStyles()"
+    >
+      <div [ngStyle]="setBadgeStyles()" class="iex-button-badge">
+        {{ badge }}
+      </div>
+    </div>
+    <div *ngIf="text" [ngStyle]="setTextStyles()" class="iex-button-text">
+      {{ text }}
+    </div>
+  </button>
+  <div
+    *ngIf="hint && !text && hover && hintAnimationDirection === 'BT'"
+    class="iex-button-hint-bottom-top"
+    [@enterLeaveBottomTop]
+  >
+    <span class="hint-text">{{ hint }}</span>
+  </div>
+  <div
+    *ngIf="hint && !text && hover && hintAnimationDirection === 'RL'"
+    class="iex-button-hint-right-left"
+    [@enterLeaveRightLeft]
+  >
+    <span class="hint-text">{{ hint }}</span>
+  </div>
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,349 @@
+.iex-button-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.iex-button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  /*height: 3.25rem;*/
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  background: transparent;
+  transition: all 0.15s ease-in-out;
+}
+.iex-button-icon {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  width: 3.25rem;
+  transition: all 0.15s ease-in-out;
+}
+.iex-button-icon.small-size {
+  height: 2.25rem;
+  width: 2.25rem;
+  font-size: 0.95rem;
+}
+.iex-button-icon.extra-small-size {
+  height: 1.75rem;
+  width: 1.75rem;
+  font-size: 0.75rem;
+}
+.iex-button-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  padding: 0 1.5rem;
+  transition: all 0.15s ease-in-out;
+}
+.iex-button-hint-right-left {
+    display: flex;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 0.85rem;
+    left: 3.65rem;
+    line-height: 1.1rem;
+    position: absolute;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.95rem;
+    z-index: 9999;
+    letter-spacing: 0;
+    border-radius: 3px;
+  }
+  .iex-button-hint-right-left::before {
+    content: "";
+    position: absolute;
+    left: -0.35rem;
+    width: 0;
+    height: 0;
+    border-top: 0.35rem solid transparent;
+    border-bottom: 0.35rem solid transparent;
+    border-right: 0.35rem solid #3b3b3b;
+  }
+.iex-button-hint-bottom-top {
+  display: flex;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 0.85rem;
+  top: 3.65rem;
+  line-height: 1.1rem;
+  position: absolute;
+  background-color: #3b3b3b;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.95rem;
+  z-index: 9999;
+  letter-spacing: 0;
+  border-radius: 3px;
+}
+.iex-button-hint-bottom-top::before {
+  content: "";
+  position: absolute;
+  top: -0.35rem;
+  width: 0;
+  height: 0;
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid #3b3b3b;
+}
+.iex-button-hint-right-left .hint-text,
+.iex-button-hint-bottom-top .hint-text {
+  text-align: center;
+}
+.iex-button-badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  padding-right: 1rem;
+  transition: all 0.15s ease-in-out;
+  /*margin-left: -0.475rem;*/
+}
+.iex-button-badge {
+  font-family: monospace;
+  display: flex;
+  font-size: 0.8465rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 0 0.4rem;
+  border-radius: 2px;
+  letter-spacing: 0;
+  line-height: 1.2rem;
+}
+.ml-1px {
+  margin-left: 1px;
+}
+
+.mr-1px {
+  margin-right: 1px;
+}
+
+.mb-1px {
+  margin-bottom: 1px;
+}
+
+.mt-1px {
+  margin-top: 1px;
+}
+
+.ml-2px {
+  margin-left: 2px;
+}
+
+.mr-2px {
+  margin-right: 2px;
+}
+
+.mb-2px {
+  margin-bottom: 2px;
+}
+
+.mt-2px {
+  margin-top: 2px;
+}
+
+.i-rounded .iex-button-icon,
+.t-rounded .iex-button-text {
+  border-radius: 0.25rem;
+}
+.i-rounded-left .iex-button-icon,
+.t-rounded-left .iex-button-text {
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+.i-rounded-right .iex-button-icon,
+.t-rounded-right .iex-button-text {
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+/*!
+    * Pencil horizontal animation
+    *
+    *
+    */
+
+.pencil-editing {
+  -webkit-animation: editing 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  -moz-animation: editing 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  -o-animation: editing 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  animation: editing 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+@keyframes editing {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+/*!
+     * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+     * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+     * Licensed under MIT
+     */
+.la-ball-pulse,
+.la-ball-pulse > div {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.la-ball-pulse {
+  display: block;
+  font-size: 0;
+  color: #fff;
+}
+.la-ball-pulse.la-dark {
+  color: #3f3f3f;
+}
+.la-ball-pulse > div {
+  display: inline-block;
+  float: none;
+  background-color: currentColor;
+  border: 0 solid currentColor;
+}
+.la-ball-pulse {
+  width: 54px;
+  height: 18px;
+}
+.la-ball-pulse > div:nth-child(1) {
+  -webkit-animation-delay: -200ms;
+  -moz-animation-delay: -200ms;
+  -o-animation-delay: -200ms;
+  animation-delay: -200ms;
+}
+.la-ball-pulse > div:nth-child(2) {
+  -webkit-animation-delay: -100ms;
+  -moz-animation-delay: -100ms;
+  -o-animation-delay: -100ms;
+  animation-delay: -100ms;
+}
+.la-ball-pulse > div:nth-child(3) {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+.la-ball-pulse > div {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 100%;
+  -webkit-animation: ball-pulse 1s ease infinite;
+  -moz-animation: ball-pulse 1s ease infinite;
+  -o-animation: ball-pulse 1s ease infinite;
+  animation: ball-pulse 1s ease infinite;
+}
+.la-ball-pulse.la-sm {
+  width: 26px;
+  height: 8px;
+}
+.la-ball-pulse.la-sm > div {
+  width: 4px;
+  height: 4px;
+  margin: 2px;
+}
+.la-ball-pulse.la-2x {
+  width: 108px;
+  height: 36px;
+}
+.la-ball-pulse.la-2x > div {
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+}
+.la-ball-pulse.la-3x {
+  width: 162px;
+  height: 54px;
+}
+.la-ball-pulse.la-3x > div {
+  width: 30px;
+  height: 30px;
+  margin: 12px;
+}
+/*
+      * Animation
+      */
+@-webkit-keyframes ball-pulse {
+  0%,
+  60%,
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.1;
+    -webkit-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+}
+@-moz-keyframes ball-pulse {
+  0%,
+  60%,
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.1;
+    -moz-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+}
+@-o-keyframes ball-pulse {
+  0%,
+  60%,
+  100% {
+    opacity: 1;
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.1;
+    -o-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+}
+@keyframes ball-pulse {
+  0%,
+  60%,
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.1;
+    -webkit-transform: scale(0.01);
+    -moz-transform: scale(0.01);
+    -o-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+}

@@ -1,0 +1,61 @@
+.message {
+  position: relative;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background: #3b4045;
+  flex-direction: column;
+  min-height: 3.25rem;
+  line-height: 1.225rem;
+  border-radius: 6px;
+  font-weight: 200;
+}
+.message .message-close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid #ffffff;*/
+  cursor: pointer;
+  transition: color 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.message .message-close-button:hover {
+  color: #dddddd;
+}
+.message::after {
+  position: absolute;
+  content: "";
+  top: 99%;
+  left: 1.625rem;
+  border-top: 0 solid transparent;
+  border-left-width: 0.5em;
+  border-left-color: #3b4045;
+  border-left-style: solid;
+  border-bottom: 0.5em solid transparent;
+  border-right: 0 solid transparent;
+  width: 0;
+  height: 0;
+}
+.message p {
+  padding: 0 3.25rem 0 15px;
+  margin: 0;
+}
+.message.error {
+  background: #b91d2c;
+}
+.message.error::after {
+  border-left-color: #b91d2c;
+}
+.message.success {
+  background: #2c9b18;
+}
+.message.success::after {
+  border-left-color: #2c9b18;
+}
+.message.notification {
+  background: #3b4045;
+}

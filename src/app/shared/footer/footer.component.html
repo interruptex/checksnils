@@ -1,0 +1,68 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="site-footer-content d-flex">
+          <div class="created-by-iex">
+            <div class="iex__logo">
+              <div class="iex__logo__exception">
+                <div class="iex__logo__exception__greyline"></div>
+                <div class="iex__logo__exception__greyline"></div>
+                <div class="iex__logo__exception__greyline"></div>
+                <div class="iex__logo__exception__greyline"></div>
+                <div class="iex__logo__exception__greyline"></div>
+                <div class="iex__logo__exception__redline"></div>
+                <div class="iex__logo__exception__greyline"></div>
+              </div>
+              <div class="iex__logo__interruptex">
+                <div class="iex__logo__char iex__logo__i">i</div>
+                <div class="iex__logo__char iex__logo__n">n</div>
+                <div class="iex__logo__char iex__logo__t0">t</div>
+                <div class="iex__logo__char iex__logo__e">e</div>
+                <div class="iex__logo__char iex__logo__r">r</div>
+                <div class="iex__logo__char iex__logo__r">r</div>
+                <div class="iex__logo__char iex__logo__u">u</div>
+                <div class="iex__logo__char iex__logo__p">p</div>
+                <div class="iex__logo__char iex__logo__t1">t</div>
+                <div class="iex__logo__char iex__logo__e iex__logo__red">e</div>
+                <div class="iex__logo__char iex__logo__x iex__logo__red">x</div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright ml-auto">
+            <i class="far fa-copyright pr-1"></i>
+            <span class="pr-1">{{ today | date: "yyyy" }} checksnils</span
+            ><span
+              (click)="componentInsideModal.open()"
+              class="user-info pl-1"
+              ><i class="far fa-question-circle"></i></span
+            >
+          </div>
+          <iex-modal #componentInsideModal>
+            <ng-template #modalHeader
+              ><h5>Информация для пользователей</h5></ng-template
+            >
+            <ng-template #modalBody>
+              <p>
+                Обратите внимание, что сервис не хранит и не передает введенную
+                информацию куда-либо. Обработка введенной информации
+                осуществляется исключительно на стороне клиента.
+              </p>
+              <p>Приятной работы.</p>
+            </ng-template>
+            <ng-template #modalFooter>
+              <iex-button
+                (onClick)="componentInsideModal.close()"
+                text="Прекрасно"
+                textBlockColor="#2c9b18"
+                hoverTextBlockColor="#2a9417"
+                classes="t-rounded"
+                textWeight="500"
+              ></iex-button>
+            </ng-template>
+          </iex-modal>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

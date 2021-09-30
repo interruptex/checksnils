@@ -1,0 +1,106 @@
+.site-footer {
+  color: #3b4045;
+  background: #ffffff;
+  margin-top: 0;
+}
+.site-footer .site-footer-content {
+  height: 6.5rem;
+  font-size: 1rem;
+}
+.site-footer .created-by-iex {
+  display: flex;
+  align-items: center;
+}
+.site-footer .copyright {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.site-footer .user-info {
+  text-decoration: underline;
+  color: #296cb1;
+  cursor: pointer;
+}
+
+.iex__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.iex__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.iex__logo.white-logo .iex__logo__interruptex .iex__logo__char {
+  color: #888888; //#eeeeee;
+}
+.iex__logo.white-logo .iex__logo__interruptex .iex__logo__red {
+  color: #bbbbbb;
+}
+.iex__logo.white-logo .iex__logo__exception .iex__logo__exception__greyline {
+  background-color: #888888;
+}
+.iex__logo.white-logo .iex__logo__exception .iex__logo__exception__redline {
+  background-color: #bbbbbb;
+}
+.iex__logo__interruptex {
+  display: flex;
+  flex-direction: row;
+}
+.iex__logo__interruptex .iex__logo__char {
+  font-family: "Montserrat Alternates";
+  font-size: 19px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.iex__logo__interruptex .iex__logo__n {
+  margin-left: -2px;
+}
+.iex__logo__interruptex .iex__logo__t0 {
+  margin-left: -2px;
+}
+.iex__logo__interruptex .iex__logo__t1 {
+  margin-left: -1px;
+}
+.iex__logo__interruptex .iex__logo__e {
+  font-family: "Montserrat";
+  margin-left: -1px;
+}
+.iex__logo__interruptex .iex__logo__r {
+  margin-left: -1px;
+}
+.iex__logo__interruptex .iex__logo__u {
+  margin-left: -1px;
+}
+.iex__logo__interruptex .iex__logo__p {
+  margin-left: -2px;
+}
+.iex__logo__interruptex .iex__logo__x {
+  margin-left: -1px;
+}
+.iex__logo__interruptex .iex__logo__red {
+  color: #b11515;
+  font-weight: 500;
+}
+.iex__logo__exception {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3px;
+}
+.iex__logo__exception .iex__logo__exception__greyline {
+  height: 1px;
+  margin-bottom: 2px;
+  width: 26px;
+  background: #333333;
+}
+
+.iex__logo__exception .iex__logo__exception__redline {
+  height: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  width: 26px;
+  background: #b11515;
+}
